@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    padding: 100px;
+    padding: 20px;
     background: linear-gradient(90deg in oklab, rgb(14, 14, 65), rgb(72, 9, 9)) ;
     vertical-align:center ;
     /* -ms-text-combine-horizontal: center; */
@@ -15,8 +15,8 @@ button{
     font-size: 30px;
     color: aliceblue;
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     -ms-text-combine-horizontal: center;
     border: none;
     box-shadow:5px 3px 15px #502a2a  ;
@@ -51,5 +51,9 @@ input::placeholder{
         padding-top: 70px; 
         /* display: flex; */
 
+    }
+    button{
+        height: 60px;
+        width: 60px;
     }
 }    

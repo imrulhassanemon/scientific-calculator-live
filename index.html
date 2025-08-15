@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<link rel="stylesheet" href="style.css">
-<body>
-    <input type="text" placeholder="0" id="inputBox">
-    <div>
-        <button class="operator">AC</button>
-        <button class="operator">DE</button>
-        <button class="operator">/-</button>
-        <button class="operator">÷</button>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./src/style.css" />
+  <body>
+    <h1 class="text-white font-bold text-4xl">Scientific Calculator</h1>
+    <input type="text" placeholder="0" id="inputBox" />
+    <div class="border">
+      <div class="border">
+        <div>
+          <button class="operator">AC</button>
+          <button class="operator">(</button>
+          <button class="operator">)</button>
+          <button class="operator">÷</button>
+        </div>
+        <div>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button class="operator">x</button>
+        </div>
+        <div>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button class="operator">-</button>
+        </div>
+        <div>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button class="operator">+</button>
+        </div>
+        <div class="text-center">
+          <button class="text-center">.</button>
+          <button>0</button>
+          <button class="operator">%</button>
+          <button class="equal">=</button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <button>Sin</button>
+          <button>ln</button>
+          <button>π</button>
+          <button>cos</button>
+        </div>
+        <div>
+          <button>log</button>
+          <button>e</button>
+          <button>tan</button>
+          <button>√</button>
+        </div>
+      </div>
     </div>
-    <div>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="operator">x</button>
-    </div>
-    <div>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="operator">-</button>
-    </div>
-    <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="operator">+</button>
-    </div>
-    <div>
-        <button>00</button>
-        <button>0</button>
-        <button class="operator">.</button>
-        <button class="equal">=</button>
-    </div>
-    <script src="script.js"></script>
-   
-</body>
+    <h1 class="text-sm text-white">by Imrul Hassan emon</h1>
+    <script src="./src/script.js"></script>
+  </body>
 </html>
