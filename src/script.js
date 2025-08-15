@@ -44,7 +44,8 @@ arr.forEach(button => {
         const value = button.innerText
         console.log(currentValue)
         
-        if(value == 'AC'){
+        try{
+            if(value == 'AC'){
             currentValue = "";
             display.value = currentValue;
         }else if(value == '='){
@@ -52,6 +53,10 @@ arr.forEach(button => {
         }
         else{
             currentValue += value;
+            display.value = currentValue;
+        }
+        }catch{
+            currentValue = 'INVALID SYNTAX';
             display.value = currentValue;
         }
        
