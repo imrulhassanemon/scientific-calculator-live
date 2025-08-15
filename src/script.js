@@ -21,11 +21,14 @@ const evaluateResult = () => {
     .replace(/÷/g, '/')
     .replace('%', '*0.01')
     .replace('Sin', 'Math.sin')
+    .replace('log', 'Math.log10')
     .replace('ln', 'Math.log')
     .replace('π', 'Math.PI')
     .replace('cos', 'Math.cos')
     .replace('e', 'Math.E')
-    .replace('log', 'Math.log10')
+    .replace('tan', 'Math.tan')
+    .replace('√', `Math.sqrt`)
+    // .replace(/log\(([^)]+)\)/gi, 'Math.log10($1)');
     ; // Replace all 
     const valueAfterEval = eval(convertedValue);
     const result = valueAfterEval.toString();
